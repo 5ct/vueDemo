@@ -1,6 +1,6 @@
 'use strict'
 const path = require("path");
-const vueloaderConfig = require("./vue.loader.conf");
+const vueloaderConfig = require("./vue-loader.conf");
 const webpack = require("webpack");
 const utils = require("./util");
 const config = require('../config');
