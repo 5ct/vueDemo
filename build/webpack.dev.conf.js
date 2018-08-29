@@ -1,3 +1,4 @@
+'use strict'
 const portfinder = require("portfinder");
 const config = require("../config");
 const utils = require("./util");
