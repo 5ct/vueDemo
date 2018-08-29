@@ -27,7 +27,7 @@ exports.cssLoaders = function(options){
 		if(loader){
 			loaders.push({
 				loader:loader+"-loader",
-				optons:Object.assign({},loaderOption,{
+				options:Object.assign({},loaderOption,{
 					options:[{
 						sourceMap:options.soucrMap
 					}]
