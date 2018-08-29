@@ -18,7 +18,7 @@ const devWebpackConfig = merge(baseWebpackConf,{
 	devtool:config.dev.devtool,
 	devServer:{
 		clientLogLevel:"warning",
-		historyApiFailback:{
+		historyApiFallback:{
 			rewrites:[{
 				from:/.*/,
 				to:path.posix.join(config.dev.assetsPublicPath,"index.html")
@@ -27,6 +27,7 @@ const devWebpackConfig = merge(baseWebpackConf,{
 		hot:true,
 		contentBase:false,
 		host:HOST||config.dev.host,
+		port: PORT || config.dev.port,
 		compress:true,
 		open:config.dev.autoOpenBrowser,
 		overlay:config.dev.errorOverlay?{warnings:false,errors:true}:false,
